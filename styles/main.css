@@ -2825,6 +2825,13 @@ a:hover, a:focus {
   color: #ff2e2e;
 }
 
+.yt{
+  color:#FFFFFF;
+}
+.yt:hover, .yt:focus {
+  color: #ff2e2e;
+}
+
 h1, .h1 {
   font-size: 3.5em;
   line-height: 1.15;
