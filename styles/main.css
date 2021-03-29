@@ -2805,11 +2805,24 @@ small {
 }
 
 a {
-  color: #378C3F;
+  color: #818182;
 }
 
 a:hover, a:focus {
-  color: #378C3F;
+  color: #000000;
+}
+.link{
+  color:#090059;
+}
+.link:hover, .link:focus {
+  color: #ff2e2e;
+}
+
+.youtube{
+  color:#818182;
+}
+.youtube:hover, .youtube:focus {
+  color: #ff2e2e;
 }
 
 h1, .h1 {
