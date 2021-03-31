@@ -10,13 +10,29 @@
       <link href="css/aos.css" rel="stylesheet">
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <link href="styles/main.css" rel="stylesheet">
+      <script src="js/core/jquery.3.2.1.min.js"></script>
+      <script type="text/javascript">
+      	$(function () {
+		  $(document).scroll(function () {
+		    var $nav = $("nav");
+
+		    if($(this).scrollTop() > $nav.height()+500)
+		    	{$nav.removeClass('navbar-transparent');
+				}
+			else
+			{
+				$nav.addClass('navbar-transparent');
+			}
+		  });
+		});
+
+      </script>
       
    </head>
    <body id="top">
-	<base target="_blank">
       <header>
          <div class="profile-page sidebar-collapse">
-            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="400">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary" color-on-scroll="500">
                <div class="container">
                   <div class="navbar-translate"><a class="navbar-brand" href="#" rel="tooltip">Peeyush Sahu</a>
                      <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
@@ -55,8 +71,7 @@
                   <div class="container">
                      <div class="button-container">
                         <a class="btn btn-default btn-round btn-lg btn-icon " href="#"><i class="fa devicon-facebook-plain fa-2x " aria-hidden="true"></i></a>	
-                        
-			<a class="btn btn-default btn-round btn-lg btn-icon " target="_blank" href="https://www.youtube.com/channel/UCIFZAjhUt1Z_NQtAv1myjZg"><i class="fa fa-youtube-play fa-2x yt" aria-hidden="true"></i></a>
+                        <a class="btn btn-default btn-round btn-lg btn-icon " href="#"><i class="fa devicon-twitter-plain fa-2x " aria-hidden="true"></i></a>	
                         <a class="btn btn-default btn-round btn-lg btn-icon " href="#"><i class="fa devicon-github-plain fa-2x " aria-hidden="true"></i></a>	
                      </div>
                   </div>
@@ -119,7 +134,7 @@
                      <i class="devicon-cplusplus-plain" style="font-size: 5em;"></i>
                      <i class="devicon-python-plain-wordmark" style="font-size: 5em;"></i>
                      <i class="devicon-mysql-plain-wordmark" style="font-size: 5em;"></i>
-                     <!--<i class="devicon-html5-plain-wordmark" style="font-size: 5em;"></i>-->
+                     <i class="devicon-html5-plain-wordmark" style="font-size: 5em;"></i>
                      <i class="devicon-javascript-plain" style="font-size: 5em;"></i>
                      <i class="devicon-php-plain " style="font-size: 5em;"></i>
                      <i class="devicon-linux-plain" style="font-size: 5em;"></i>
@@ -147,7 +162,7 @@
                            <p>
                                AIR 447 in Graduate Aptitude Test in Engineering (CSE) with GATE Score 742.
                            </p>
-                           
+                           <a  href="images/gatesc.pdf" target="_blank" title="ScoreCard"><i class="fa fa-file-pdf-o fa-2x youtube" aria-hidden="true"></i></a>
                         </div>
                      </div>
                   </div>
@@ -442,9 +457,9 @@
                         <div class="card-body">
                            <div class="h5">Website Development Competition's </div>
                            <p>
-                              Made websites for various web-development competition's held at our college.<br>
+                              Made websites for various web-development competition's held in our college.<br>
                               For Hire Uncle: Domestic Help Portal and Food Uncle: Food ordering Portal, got First prize.<br>
-                              For Exam Uncle: Online Examination Portal, got Second Prize.</p>
+                              For Examp Uncle: Online Examination Portal, got Second Prize.</p>
                               <a  href="images/web1.jpg" target="_blank" title="Certificate"><i class="fa fa-picture-o fa-2x youtube" aria-hidden="true"></i></a>
                               &nbsp; &nbsp; &nbsp; &nbsp;
                               <a  href="images/web2.jpg" target="_blank" title="Certificate"><i class="fa fa-picture-o fa-2x youtube" aria-hidden="true"></i></a>
@@ -569,7 +584,7 @@
                                  </a>
                               </div>
                               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                 <!--<a href="examuncle.html">-->
+                                 <a href="examuncle.html">
                                     <figure class="cc-effect">
                                        <img src="images/ExamUncle.PNG" alt="Image"  />
                                        <figcaption>
@@ -577,12 +592,12 @@
                                           <p>Web Development</p>
                                        </figcaption>
                                     </figure>
-                                 <!--</a>-->
+                                 </a>
                               </div>
                            </div>
                            <div class="col-md-6">
                               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                <!-- <a href="fooduncle.html">-->
+                                 <a href="fooduncle.html">
                                     <figure class="cc-effect">
                                        <img src="images/Food Uncle.PNG" alt="Image"/>
                                        <figcaption>
@@ -590,10 +605,10 @@
                                           <p>Web Development</p>
                                        </figcaption>
                                     </figure>
-                                 <!--</a>-->
+                                 </a>
                               </div>
                               <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                                <!-- <a href="hireuncle.html">-->
+                                 <a href="hireuncle.html">
                                     <figure class="cc-effect">
                                        <img src="images/Hire uncle.PNG" alt="Image"/>
                                        <figcaption>
@@ -601,7 +616,7 @@
                                           <p>Web Development</p>
                                        </figcaption>
                                     </figure>
-                                 <!--</a>-->
+                                 </a>
                               </div>
                            </div>
                         </div>
@@ -791,7 +806,7 @@
          		document.getElementById(f).style.display = "none";
          }
       </script>
-      <script src="js/core/jquery.3.2.1.min.js"></script>
+      
       <script src="js/core/popper.min.js"></script>
       <script src="js/core/bootstrap.min.js"></script>
       <script src="js/now-ui-kit.js?v=1.1.0"></script>
